@@ -2,6 +2,16 @@
 using namespace std;
 int main()
 {
+
+    // ractengal pattern for
+    /*
+    *****
+    *   *
+    *   *
+    *   *
+    *****
+    */
+
     // int row, col;
     // cin >> row >> col;
     // for (int i = 0; i <= row; i++)
@@ -26,6 +36,8 @@ int main()
 
     int n;
     cin >> n;
+
+    // peramid pattern
     // for (int i = n; i >= 1; i--)
     // {
     //     for (int j = 1; j <= i; j++)
@@ -52,6 +64,8 @@ int main()
     //     cout << endl;
     // }
 
+    ////////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////////peramid pattern
     // for (int i = 0; i <= n; i++)
     // {
     //     for (int j = 0; j < i; j++)
@@ -60,13 +74,16 @@ int main()
     //     }
     //     cout << endl;
     // }
+    int count = 1;
 
     for (int i = 1; i <= n; i++)
     {
         for (int j = 1; j < i; j++)
         {
-            cout << i
+            cout << count;
+            count++;
         }
+        cout << endl;
     }
 
     return 0;
