@@ -248,7 +248,7 @@ int main()
 5 4 3 2 1 2 3 4 5
 
 */
-    for (int i = 1; i <= n; i++)
+    /* for (int i = 1; i <= n; i++)
     {
         int j;
         for (j = 1; j <= n - i; j++)
@@ -266,7 +266,11 @@ int main()
             cout << k++ << " ";
         }
         cout << endl;
-    }
+    } */
 
+    /*
+    rows= 1 to n ;
+    coulms= n-row number " " ;  2xrow no -1 "*";
+     */
     return 0;
 }
