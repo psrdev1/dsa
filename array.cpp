@@ -20,7 +20,7 @@ using namespace std;
 } */
 
 // bubble sort
-void bubbleSort(int arr[], int n)
+/* void bubbleSort(int arr[], int n)
 {
     int counter = 1;
     while (counter < n)
@@ -37,7 +37,22 @@ void bubbleSort(int arr[], int n)
         counter++;
     }
 }
+ */
 
+void insertionSort(int arr[], int n)
+{
+    for (int i = 1; i < n; n++)
+    {
+        int current = arr[i];
+        int j = i - 1;
+        while (arr[j] > current && j >= 0)
+        {
+            arr[j = 1] = arr[j];
+            j--;
+        }
+        arr[j + 1] = current;
+    }
+}
 int main()
 {
 
@@ -65,9 +80,9 @@ int main()
      }
      cout << maxNum << " " << minNum << endl; */
 
-        int arr[6] = {1, 2, 4, 7, 12, 14};
+    int arr[6] = {1, 2, 4, 7, 12, 14};
     int arraySize = sizeof(arr) / sizeof(int);
-    bubbleSort(arr, arraySize);
+    insertionSort(arr, arraySize);
     for (int i = 0; i < arraySize; i++)
     {
         cout << arr[i] << endl;
